@@ -4,106 +4,257 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles\styles.css" />
+    <link rel="stylesheet" href="styles\style2.css" />
     <title>CEJ Software Development</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
   </head>
   <body>
-    <section class="about-us">
-      <h2>About Us</h2>
-      <p>
-        At CEJ, we're a team of dedicated software developers who are passionate
-        about solving complex problems and building innovative solutions. With
-        years of experience in the industry, we've worked with a variety of
-        clients across multiple sectors, from startups to large enterprises.
-      </p>
-      <p>
-        Our mission is to provide the highest quality software development
-        services, tailored to meet the specific needs of our clients. We work
-        closely with our clients to understand their unique business
-        requirements, and we strive to deliver solutions that not only meet
-        those requirements but also exceed their expectations.
-      </p>
-      <p>
-        At CEJ, we believe that our success is driven by our people. Our team of
-        developers, designers, and project managers are some of the most
-        talented and creative professionals in the industry. We take pride in
-        our work, and we're constantly learning and evolving to stay ahead of
-        the curve.
-      </p>
-      <p>
-        Our services include software development, web and mobile app
-        development, custom software solutions, and more. We use the latest
-        technologies and best practices to ensure that our solutions are
-        scalable, secure, and optimized for performance.
-      </p>
-      <p>
-        We're committed to providing exceptional customer service, and we strive
-        to build long-term relationships with our clients. We're proud of the
-        work we do, and we're always looking for new challenges and
-        opportunities to grow and expand our capabilities.
-      </p>
-    </section>
-    <section class="who-we-are">
-      <div class="container">
-        <h2>Who we are</h2>
-        <div class="developers-container">
-          <div class="developer">
-            <img
-              src="images\cecilia_den_dauw.jpg"
-              alt="Cecilia Den Dauw"
-              class="image-left"
-            />
-            <div class="developer-info">
-              <h3>Cecilia Den Dauw</h3>
-              <p>
-                With over 10 years of experience in software development, Cecilia
-                is a seasoned developer with a passion for creating innovative
-                and user-friendly solutions. Her expertise includes web
-                development, database design, and project management.
-              </p>
-            </div>
-          </div>
-          <div class="developer">
-            <img
-              src="images\johnny_bravo.png"
-              alt="Elias Gauna"
-              class="image-right"
-            />
-            <div class="developer-info">
-              <h3>Elias Gauna</h3>
-              <p>
-                Elias is a software engineer with a background in computer
-                science and mathematics. He has experience in developing complex
-                software systems for a range of industries, including
-                healthcare, finance, and transportation.
-              </p>
-            </div>
-          </div>
-          <div class="developer">
-            <img
-              src="images\johnny_bravo.png"
-              alt="Johnny Bravo"
-              class="image-left"
-            />
-            <div class="developer-info">
-              <h3>Johnny Bravo</h3>
-              <p>
-                Johnny is a full-stack developer with a passion for creating
-                dynamic and responsive web applications. He has experience in
-                front-end and back-end development, and is proficient in several
-                programming languages, including JavaScript, Python, and Ruby.
-              </p>
-            </div>
-          </div>
-        </div>
+    <nav>
+      <div class="logo">
+        <img src="images\CEJ_logo_2.PNG" alt="Logo" />
       </div>
-    </section>
+      <ul class="menu">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Who we are</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Web Services</a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="fa fa-bars"></i>
+      </div>
+    </nav>
+    <div class="web-page">
+      <div class="container about-us">
+        <section class="about-us-section">
+          <h2>About Us</h2>
+          <p>
+            At CEJ, we're a team of dedicated software developers who are
+            passionate about solving complex problems and building innovative
+            solutions. With years of experience in the industry, we've worked
+            with a variety of clients across multiple sectors, from startups to
+            large enterprises.
+          </p>
+          <p>
+            Our mission is to provide the highest quality software development
+            services, tailored to meet the specific needs of our clients. We
+            work closely with our clients to understand their unique business
+            requirements, and we strive to deliver solutions that not only meet
+            those requirements but also exceed their expectations.
+          </p>
+          <p>
+            At CEJ, we believe that our success is driven by our people. Our
+            team of developers, designers, and project managers are some of the
+            most talented and creative professionals in the industry. We take
+            pride in our work, and we're constantly learning and evolving to
+            stay ahead of the curve.
+          </p>
+          <p>
+            Our services include software development, web and mobile app
+            development, custom software solutions, and more. We use the latest
+            technologies and best practices to ensure that our solutions are
+            scalable, secure, and optimized for performance.
+          </p>
+          <p>
+            We're committed to providing exceptional customer service, and we
+            strive to build long-term relationships with our clients. We're
+            proud of the work we do, and we're always looking for new challenges
+            and opportunities to grow and expand our capabilities.
+          </p>
+        </section>
+      </div>
+      <div class="container who-we-are">
+        <section class="who-we-are-section">
+          <h2>Who we are</h2>
+          <div class="developers-container">
+            <div class="developer">
+              <img
+                src="images\cecilia_den_dauw.jpg"
+                alt="Cecilia Den Dauw"
+                class="image-left"
+              />
+              <div class="developer-info">
+                <h3>Cecilia Den Dauw</h3>
+                <p>
+                  With over 10 years of experience in software development,
+                  Cecilia is a seasoned developer with a passion for creating
+                  innovative and user-friendly solutions. Her expertise includes
+                  web development, database design, and project management.
+                </p>
+              </div>
+            </div>
+            <div class="developer">
+              <img
+                src="images\johnny_bravo.png"
+                alt="Elias Gauna"
+                class="image-right"
+              />
+              <div class="developer-info">
+                <h3>Elias Gauna</h3>
+                <p>
+                  Elias is a software engineer with a background in computer
+                  science and mathematics. He has experience in developing
+                  complex software systems for a range of industries, including
+                  healthcare, finance, and transportation.
+                </p>
+              </div>
+            </div>
+            <div class="developer">
+              <img
+                src="images\johnny_bravo.png"
+                alt="Johnny Bravo"
+                class="image-left"
+              />
+              <div class="developer-info">
+                <h3>Johnny Bravo</h3>
+                <p>
+                  Johnny is a full-stack developer with a passion for creating
+                  dynamic and responsive web applications. He has experience in
+                  front-end and back-end development, and is proficient in
+                  several programming languages, including JavaScript, Python,
+                  and Ruby.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container contact-us">
+        <section class="contact-us-section">
+          <h2>Contact Us</h2>
+          <p>
+            Get in touch with us today to learn more about our services or to
+            discuss your project needs.
+          </p>
+          <form class="contact-form">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              minlength="2"
+              maxlength="50"
+              pattern="[a-zA-Z ]+"
+              aria-describedby="name-error"
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              aria-describedby="email-error"
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              minlength="10"
+              maxlength="1000"
+              aria-describedby="message-error"
+            ></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </div>
+      <div class="container web-services">
+        <section class="web-services-section">
+          <h2>Web Services</h2>
+          <p>Select the web services you are interested in:</p>
+          <form class="web-services-form" id="products-form">
+            <label for="web-design">
+              <input
+                type="checkbox"
+                id="web-design"
+                name="web-design"
+                value="web-design"
+              />
+              Web Design - $500
+            </label>
+            <label for="web-development">
+              <input
+                type="checkbox"
+                id="web-development"
+                name="web-development"
+                value="web-development"
+              />
+              Web Development - $1000
+            </label>
+            <label for="mobile-app-development">
+              <input
+                type="checkbox"
+                id="mobile-app-development"
+                name="mobile-app-development"
+                value="mobile-app-development"
+              />
+              Mobile App Development - $1500
+            </label>
+            <label for="custom-software-development">
+              <input
+                type="checkbox"
+                id="custom-software-development"
+                name="custom-software-development"
+                value="custom-software-development"
+              />
+              Custom Software Development - $2000
+            </label>
+            <label for="e-commerce-development">
+              <input
+                type="checkbox"
+                id="e-commerce-development"
+                name="e-commerce-development"
+                value="e-commerce-development"
+              />
+              E-commerce Development - $2500
+            </label>
+            <label for="cloud-solutions">
+              <input
+                type="checkbox"
+                id="cloud-solutions"
+                name="cloud-solutions"
+                value="cloud-solutions"
+              />
+              Cloud Solutions - $3000
+            </label>
+            <label for="digital-marketing">
+              <input
+                type="checkbox"
+                id="digital-marketing"
+                name="digital-marketing"
+                value="digital-marketing"
+              />
+              Digital Marketing - $500
+            </label>
+            <label for="seo">
+              <input type="checkbox" id="seo" name="seo" value="seo" />
+              SEO - $1000
+            </label>
+            <button type="submit">Submit</button>
+          </form>
+          <div id="summary"></div>
+        </section>
+      </div>
+      <div class="container video">
+        <section class="video-section">
+          <div id="video-container"></div>
+        </section>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -114,5 +265,6 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="scripts\script.js"></script>
   </body>
 </html>
